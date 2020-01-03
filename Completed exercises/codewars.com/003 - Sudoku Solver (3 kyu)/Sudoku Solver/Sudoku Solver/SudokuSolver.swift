@@ -215,3 +215,26 @@ func doesSudokuMeetTheRules(solvedPuzzle: Puzzle) -> Bool {
     
     return true
 }
+
+func printSudoku(puzzle: Puzzle) {
+    var board = String()
+    for i in (0...8) {
+        if i % 3 == 0 && i != 0 {
+            board.append("------+-------+------")
+            board.append("\n")
+        }
+        for j in (0...8) {
+            if j > 0 && j % 3 == 0 {
+                board.append("| ")
+            }
+            board.append("\(puzzle[i][j])")
+            if j != 8 {
+                board.append(" ")
+            }
+        }
+        if i != 8 {
+            board.append("\n")
+        }
+    }
+    print(board)
+}

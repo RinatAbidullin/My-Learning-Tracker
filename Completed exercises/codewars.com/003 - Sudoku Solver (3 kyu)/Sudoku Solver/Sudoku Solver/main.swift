@@ -31,5 +31,7 @@ let puzzle2 = [
 [0,2,0,0,5,0,0,7,0]
 ]
 
-print(sudokuSolver(puzzle: puzzle)!)
-print(sudokuSolver(puzzle: puzzle2)!)
+print("Puzzle: \n")
+printSudoku(puzzle: puzzle)
+print("\n\nSolution: \n")
+printSudoku(puzzle: sudokuSolver(puzzle: puzzle)!)
