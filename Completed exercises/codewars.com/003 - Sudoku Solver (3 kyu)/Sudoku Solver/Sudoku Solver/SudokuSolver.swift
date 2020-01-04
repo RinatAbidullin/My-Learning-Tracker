@@ -30,15 +30,10 @@ func sudokuSolver(puzzle: Puzzle) -> Puzzle?  {
                     for oneDidit in forecastForOneCell {
                         var newForecast = forecast
                         newForecast[cellCoord.i][cellCoord.j] = [oneDidit]
-                        if isForecastComeSolution(forecast: newForecast) {
-                            return convertForecastToPuzzle(forecast: newForecast)
+                        if let newPuzzle = sudokuSolver(puzzle: convertForecastToPuzzle(forecast: newForecast)) {
+                            return newPuzzle
                         } else {
-                            if let newPuzzle = sudokuSolver(puzzle: convertForecastToPuzzle(forecast: newForecast)) {
-                                
-                                return newPuzzle
-                            } else {
-                                continue
-                            }
+                            continue
                         }
                     }
                 } else {

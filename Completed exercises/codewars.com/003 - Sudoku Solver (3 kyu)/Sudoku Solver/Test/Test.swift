@@ -18,19 +18,6 @@ class Test: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
-    //-----------
     func testCreateForecastFromPuzzle() {
         let puzzle1 = [
         [0,0,0,0,0,0,0,0,0],
@@ -317,6 +304,31 @@ class Test: XCTestCase {
         [3,4,5,2,8,6,1,7,9]]
         
         XCTAssertFalse(doesSudokuMeetTheRules(solvedPuzzle: notSolution))
+        
+//        9 2 5 | 3 4 6 | 8 6 1
+//        8 3 1 | 9 5 6 | 9 2 7
+//        6 7 9 | 8 1 2 | 5 4 3
+//        ------+-------+------
+//        4 8 6 | 1 9 5 | 3 7 2
+//        5 1 2 | 4 7 8 | 4 9 6
+//        7 9 3 | 2 6 1 | 1 8 5
+//        ------+-------+------
+//        3 6 7 | 5 8 4 | 2 1 9
+//        1 5 4 | 6 8 7 | 2 3 8
+//        2 5 8 | 1 3 9 | 7 6 4
+        
+        let notSolution2 = [
+        [9,2,5,3,4,6,8,6,1],
+        [8,3,1,9,5,6,9,2,7],
+        [6,7,9,8,1,2,5,4,3],
+        [4,8,6,1,9,5,3,7,2],
+        [5,1,2,4,7,8,4,9,6],
+        [7,9,3,2,6,1,1,8,5],
+        [3,6,7,5,8,4,2,1,9],
+        [1,5,4,6,8,7,2,3,8],
+        [2,5,8,1,3,9,7,6,4]]
+        
+        XCTAssertFalse(doesSudokuMeetTheRules(solvedPuzzle: notSolution2))
     }
     
     func testSudokuSolver() {
@@ -371,5 +383,31 @@ class Test: XCTestCase {
         ]
         
         XCTAssertEqual(sudokuSolver(puzzle: puzzle2)!, solution2)
+        
+        let puzzle3 = [
+        [0,0,5,3,0,0,0,0,0],
+        [8,0,0,0,0,0,0,2,0],
+        [0,7,0,0,1,0,5,0,0],
+        [4,0,0,0,0,5,3,0,0],
+        [0,1,0,0,7,0,0,0,6],
+        [0,0,3,2,0,0,0,8,0],
+        [0,6,0,5,0,0,0,0,9],
+        [0,0,4,0,0,0,0,3,0],
+        [0,0,0,0,0,9,7,0,0]
+        ]
+        
+        let solution3 = [
+        [1,4,5,3,2,7,6,9,8],
+        [8,3,9,6,5,4,1,2,7],
+        [6,7,2,9,1,8,5,4,3],
+        [4,9,6,1,8,5,3,7,2],
+        [2,1,8,4,7,3,9,5,6],
+        [7,5,3,2,9,6,4,8,1],
+        [3,6,7,5,4,2,8,1,9],
+        [9,8,4,7,6,1,2,3,5],
+        [5,2,1,8,3,9,7,6,4]
+        ]
+        
+        XCTAssertEqual(sudokuSolver(puzzle: puzzle3)!, solution3)
     }
 }

@@ -31,7 +31,19 @@ let puzzle2 = [
 [0,2,0,0,5,0,0,7,0]
 ]
 
+let puzzle3 = [
+[0,0,5,3,0,0,0,0,0],
+[8,0,0,0,0,0,0,2,0],
+[0,7,0,0,1,0,5,0,0],
+[4,0,0,0,0,5,3,0,0],
+[0,1,0,0,7,0,0,0,6],
+[0,0,3,2,0,0,0,8,0],
+[0,6,0,5,0,0,0,0,9],
+[0,0,4,0,0,0,0,3,0],
+[0,0,0,0,0,9,7,0,0]
+]
+
 print("Puzzle: \n")
-printSudoku(puzzle: puzzle)
+printSudoku(puzzle: puzzle3)
 print("\n\nSolution: \n")
-printSudoku(puzzle: sudokuSolver(puzzle: puzzle)!)
+printSudoku(puzzle: sudokuSolver(puzzle: puzzle3)!)
