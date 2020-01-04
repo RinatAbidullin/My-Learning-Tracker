@@ -208,6 +208,20 @@ func doesSudokuMeetTheRules(solvedPuzzle: Puzzle) -> Bool {
         }
     }
     
+    for k in 0...2 {
+        for m in 0...2 {
+            var digitsInSector: Set<Int> = []
+            for i in 0...2 {
+                for j in 0...2 {
+                    digitsInSector.insert(solvedPuzzle[3 * k + i][3 * m + j])
+                }
+            }
+            if !allDigits.subtracting(digitsInSector).isEmpty {
+                return false
+            }
+        }
+    }
+    
     return true
 }
 
