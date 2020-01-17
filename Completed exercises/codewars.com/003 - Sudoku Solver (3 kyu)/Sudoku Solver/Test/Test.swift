@@ -385,7 +385,7 @@ class Test: XCTestCase {
         
         XCTAssertEqual(sudokuSolver(puzzle: puzzle2)!, solution2)
         
-        let puzzle3 = [
+        let puzzleHard = [
         [0,0,5,3,0,0,0,0,0],
         [8,0,0,0,0,0,0,2,0],
         [0,7,0,0,1,0,5,0,0],
@@ -397,7 +397,7 @@ class Test: XCTestCase {
         [0,0,0,0,0,9,7,0,0]
         ]
         
-        let solution3 = [
+        let solutionHard = [
         [1,4,5,3,2,7,6,9,8],
         [8,3,9,6,5,4,1,2,7],
         [6,7,2,9,1,8,5,4,3],
@@ -409,6 +409,20 @@ class Test: XCTestCase {
         [5,2,1,8,3,9,7,6,4]
         ]
         
-        XCTAssertEqual(sudokuSolver(puzzle: puzzle3)!, solution3)
+        XCTAssertEqual(sudokuSolver(puzzle: puzzleHard)!, solutionHard)
+        
+        let puzzleNotBeSolved = [
+        [5,0,0,0,7,0,0,0,0],
+        [5,0,0,1,9,5,0,0,0],
+        [0,9,8,0,0,0,0,6,0],
+        [8,0,0,0,6,0,0,0,3],
+        [4,0,0,8,0,3,0,0,1],
+        [7,0,0,0,2,0,0,0,6],
+        [0,6,0,0,0,0,2,8,0],
+        [0,0,0,4,1,9,0,0,5],
+        [0,0,0,0,8,0,0,7,9]
+        ]
+        
+        XCTAssertEqual(sudokuSolver(puzzle: puzzleNotBeSolved), nil)
     }
 }
