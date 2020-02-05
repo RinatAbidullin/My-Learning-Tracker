@@ -17,3 +17,4 @@
 | Усов В.А. - Swift. Основы разработки приложений под iOS и macOS (5-е издание) | 02.12.2019 - 26.01.2020 | 100% |
 | 27 видеокурсов ресурса https://swiftbook.ru/courses/ | 27.01.2020 - ... | 13,1% |
 | https://githowto.com/ru | | |
+| https://learngitbranching.js.org | | |
