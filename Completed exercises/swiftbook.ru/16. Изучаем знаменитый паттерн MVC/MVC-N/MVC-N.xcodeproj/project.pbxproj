@@ -10,6 +10,7 @@
 		55556B56240114DC002A1EB8 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55556B55240114DC002A1EB8 /* CommentsViewController.swift */; };
 		5562D4E72401340A00C2C71E /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562D4E62401340A00C2C71E /* CommentNetworkService.swift */; };
 		5562D4E9240134C000C2C71E /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562D4E8240134C000C2C71E /* GetCommentResponse.swift */; };
+		5562D4EC2401360A00C2C71E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562D4EB2401360A00C2C71E /* NetworkError.swift */; };
 		55D1F50E24010C9F00627200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F50D24010C9F00627200 /* AppDelegate.swift */; };
 		55D1F51024010C9F00627200 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F50F24010C9F00627200 /* SceneDelegate.swift */; };
 		55D1F51724010CA000627200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D1F51624010CA000627200 /* Assets.xcassets */; };
@@ -23,7 +24,8 @@
 /* Begin PBXFileReference section */
 		55556B55240114DC002A1EB8 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		5562D4E62401340A00C2C71E /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
-		5562D4E8240134C000C2C71E /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		5562D4E8240134C000C2C71E /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetCommentResponse.swift; path = ../GetCommentResponse.swift; sourceTree = "<group>"; };
+		5562D4EB2401360A00C2C71E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		55D1F50A24010C9F00627200 /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D1F50D24010C9F00627200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		55D1F50F24010C9F00627200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 				5562D4E62401340A00C2C71E /* CommentNetworkService.swift */,
 			);
 			path = "Comment Network Service";
+			sourceTree = "<group>";
+		};
+		5562D4EA2401355A00C2C71E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				5562D4E8240134C000C2C71E /* GetCommentResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		55D1F50124010C9F00627200 = {
@@ -112,6 +122,7 @@
 		55D1F52424010CE800627200 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5562D4EB2401360A00C2C71E /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,8 +158,8 @@
 		55D1F52824010D5500627200 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5562D4EA2401355A00C2C71E /* Responses */,
 				55FAEB8D24011AAE007FC43E /* Comment.swift */,
-				5562D4E8240134C000C2C71E /* GetCommentResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				55D1F51024010C9F00627200 /* SceneDelegate.swift in Sources */,
 				55FAEB9124012E9C007FC43E /* NetworkService.swift in Sources */,
 				5562D4E9240134C000C2C71E /* GetCommentResponse.swift in Sources */,
+				5562D4EC2401360A00C2C71E /* NetworkError.swift in Sources */,
 				55FAEB8C2401199F007FC43E /* CommentCell.swift in Sources */,
 				5562D4E72401340A00C2C71E /* CommentNetworkService.swift in Sources */,
 			);
