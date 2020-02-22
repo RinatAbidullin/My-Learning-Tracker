@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="220" id="e5x-mS-gzl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="220" id="e5x-mS-gzl" customClass="CommentCell" customModule="MVC_N" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="220"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e5x-mS-gzl" id="Ihg-AG-8pw">
@@ -54,6 +54,10 @@
                                                 <constraint firstItem="0u7-xV-ENK" firstAttribute="top" secondItem="Ihg-AG-8pw" secondAttribute="topMargin" id="gGo-sQ-tmr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="0u7-xV-ENK" id="6Sc-Jz-UfJ"/>
+                                            <outlet property="textView" destination="KK4-m2-bNx" id="wtn-PH-8h0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
