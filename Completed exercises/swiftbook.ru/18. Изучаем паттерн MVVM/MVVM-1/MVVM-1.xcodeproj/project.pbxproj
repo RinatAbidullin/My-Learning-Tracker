@@ -14,6 +14,7 @@
 		5562D503240254CE00C2C71E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5562D502240254CE00C2C71E /* Assets.xcassets */; };
 		5562D506240254CE00C2C71E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5562D504240254CE00C2C71E /* LaunchScreen.storyboard */; };
 		5562D50E240254EE00C2C71E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562D50D240254EE00C2C71E /* Profile.swift */; };
+		5562D510240258E800C2C71E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562D50F240258E800C2C71E /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5562D505240254CE00C2C71E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5562D507240254CE00C2C71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5562D50D240254EE00C2C71E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5562D50F240258E800C2C71E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5562D4FB240254CD00C2C71E /* SceneDelegate.swift */,
 				5562D4FD240254CD00C2C71E /* ViewController.swift */,
 				5562D50D240254EE00C2C71E /* Profile.swift */,
+				5562D50F240258E800C2C71E /* ViewModel.swift */,
 				5562D4FF240254CD00C2C71E /* Main.storyboard */,
 				5562D502240254CE00C2C71E /* Assets.xcassets */,
 				5562D504240254CE00C2C71E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5562D510240258E800C2C71E /* ViewModel.swift in Sources */,
 				5562D4FE240254CD00C2C71E /* ViewController.swift in Sources */,
 				5562D50E240254EE00C2C71E /* Profile.swift in Sources */,
 				5562D4FA240254CD00C2C71E /* AppDelegate.swift in Sources */,
