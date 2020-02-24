@@ -22,6 +22,7 @@
 		55C2D4F0240391B70048DBF6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D4EF240391B70048DBF6 /* DetailViewController.swift */; };
 		55C2D4F2240392630048DBF6 /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D4F1240392630048DBF6 /* DetailViewModelType.swift */; };
 		55C2D4F4240392AF0048DBF6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D4F3240392AF0048DBF6 /* DetailViewModel.swift */; };
+		55C2D4F62403EFAF0048DBF6 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D4F52403EFAF0048DBF6 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		55C2D4EF240391B70048DBF6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		55C2D4F1240392630048DBF6 /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
 		55C2D4F3240392AF0048DBF6 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		55C2D4F52403EFAF0048DBF6 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				5562D51D24025DDE00C2C71E /* AppDelegate.swift */,
 				5562D51F24025DDE00C2C71E /* SceneDelegate.swift */,
+				55C2D4F52403EFAF0048DBF6 /* Box.swift */,
 				5562D53D24027C1400C2C71E /* ViewModel */,
 				5562D53E24027C2200C2C71E /* Protocols */,
 				5562D538240261BC00C2C71E /* View */,
@@ -203,6 +206,7 @@
 				5562D53424025EAD00C2C71E /* Profile.swift in Sources */,
 				5562D53224025E5300C2C71E /* TableViewController.swift in Sources */,
 				5562D53C24027BAA00C2C71E /* TableViewViewModelType.swift in Sources */,
+				55C2D4F62403EFAF0048DBF6 /* Box.swift in Sources */,
 				55C2D4F2240392630048DBF6 /* DetailViewModelType.swift in Sources */,
 				55C2D4F4240392AF0048DBF6 /* DetailViewModel.swift in Sources */,
 				5562D54224027FF300C2C71E /* TableViewCellViewModel.swift in Sources */,
