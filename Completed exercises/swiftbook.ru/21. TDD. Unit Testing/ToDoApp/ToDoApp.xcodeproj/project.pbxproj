@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		558089F6240588DB007CC04E /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558089F5240588DB007CC04E /* TaskTests.swift */; };
+		558089F924058977007CC04E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558089F824058977007CC04E /* Task.swift */; };
 		55C2D556240586CA0048DBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D555240586CA0048DBF6 /* AppDelegate.swift */; };
 		55C2D558240586CA0048DBF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D557240586CA0048DBF6 /* SceneDelegate.swift */; };
 		55C2D55A240586CA0048DBF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2D559240586CA0048DBF6 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		558089F5240588DB007CC04E /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		558089F824058977007CC04E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		55C2D552240586CA0048DBF6 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C2D555240586CA0048DBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C2D557240586CA0048DBF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		558089F7240588E6007CC04E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				558089F5240588DB007CC04E /* TaskTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		55C2D549240586CA0048DBF6 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				55C2D56C240586CB0048DBF6 /* ToDoAppTests.swift */,
+				558089F7240588E6007CC04E /* Model */,
 				55C2D56E240586CB0048DBF6 /* Info.plist */,
 			);
 			path = ToDoAppTests;
@@ -128,6 +141,7 @@
 		55C2D585240586F30048DBF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				558089F824058977007CC04E /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558089F924058977007CC04E /* Task.swift in Sources */,
 				55C2D55A240586CA0048DBF6 /* ViewController.swift in Sources */,
 				55C2D556240586CA0048DBF6 /* AppDelegate.swift in Sources */,
 				55C2D558240586CA0048DBF6 /* SceneDelegate.swift in Sources */,
@@ -301,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558089F6240588DB007CC04E /* TaskTests.swift in Sources */,
 				55C2D56D240586CB0048DBF6 /* ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
