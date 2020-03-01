@@ -190,7 +190,7 @@
                         <viewLayoutGuide key="safeArea" id="8Of-5c-Kpu"/>
                     </view>
                     <connections>
-                        <outlet property="adressTextField" destination="vpK-cr-7hK" id="HfK-Aa-rpO"/>
+                        <outlet property="addressTextField" destination="vpK-cr-7hK" id="HfK-Aa-rpO"/>
                         <outlet property="cancelButton" destination="Wtq-1z-86j" id="8SD-eh-mXf"/>
                         <outlet property="dateTextField" destination="0O4-JA-M3l" id="te7-N3-N6u"/>
                         <outlet property="descriptionTextField" destination="xf8-qC-Ze8" id="3nP-vf-ZGh"/>
