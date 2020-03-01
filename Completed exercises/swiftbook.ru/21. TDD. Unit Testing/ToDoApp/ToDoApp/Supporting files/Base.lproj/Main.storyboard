@@ -179,6 +179,9 @@
                                 <rect key="frame" x="72" y="413" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save" destination="Liq-Sw-ybf" eventType="touchUpInside" id="IIK-ZQ-Etr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtq-1z-86j">
                                 <rect key="frame" x="301" y="413" width="48" height="30"/>

@@ -29,7 +29,7 @@ class NewTaskViewController: UIViewController {
         return df
     }
     
-    func save() {
+    @IBAction func save() {
         let titleString = titleTextField.text
         let locationString = locationTextField.text
         let date = dateFormatter.date(from: dateTextField.text!)
