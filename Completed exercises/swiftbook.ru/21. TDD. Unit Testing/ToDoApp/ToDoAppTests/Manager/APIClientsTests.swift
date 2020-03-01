@@ -11,36 +11,49 @@ import XCTest
 
 class APIClientsTests: XCTestCase {
     
-    var urlComponents: URLComponents!
+    var sut: APIClient!
+    var mockURLSession: MockURLSession!
 
     override func setUp() {
-        let mockURLSession = MockURLSession()
-        let sut = APIClient()
+        mockURLSession = MockURLSession()
+        sut = APIClient()
         sut.urlSession = mockURLSession
-        
-        let completionHandler = {(token: String?, error: Error?) in
-            
-        }
-        sut.login(withName: "name", password: "qwerty", completionHandler: completionHandler)
-        
-        guard let url = mockURLSession.url else {
-            XCTFail()
-            return
-        }
-        
-        urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func userLogin() {
+        let completionHandler = {(token: String?, error: Error?) in
+            
+        }
+        sut.login(withName: "name", password: "%qwerty", completionHandler: completionHandler)
+    }
 
     func testLoginUsesCorrectHost() {
-        XCTAssertEqual(urlComponents?.host, "todoapp.com")
+        userLogin()
+        XCTAssertEqual(mockURLSession.urlComponents?.host, "todoapp.com")
     }
     
     func testLoginUsesCorrectPath() {
-        XCTAssertEqual(urlComponents?.path, "/login")
+        userLogin()
+        XCTAssertEqual(mockURLSession.urlComponents?.path, "/login")
+    }
+    
+    func testLoginUsesExpectedQueryParameters() {
+        userLogin()
+        
+        guard let queryItems = mockURLSession.urlComponents?.queryItems else {
+            XCTFail()
+            return
+        }
+        
+        let urlQueryItemName = URLQueryItem(name: "name", value: "name")
+        let urlQueryItemPassword = URLQueryItem(name: "password", value: "%qwerty")
+        
+        XCTAssertTrue(queryItems.contains(urlQueryItemName))
+        XCTAssertTrue(queryItems.contains(urlQueryItemPassword))
     }
 }
 
@@ -49,6 +62,11 @@ extension APIClientsTests {
     class MockURLSession: URLSessionProtocol {
         
         var url: URL?
+        
+        var urlComponents: URLComponents? {
+            guard let url = url else { return nil }
+            return URLComponents(url: url, resolvingAgainstBaseURL: true)
+        }
         
         func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
             self.url = url
