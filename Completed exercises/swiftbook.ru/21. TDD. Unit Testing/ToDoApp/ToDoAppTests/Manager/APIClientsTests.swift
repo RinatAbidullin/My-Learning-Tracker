@@ -74,6 +74,59 @@ class APIClientsTests: XCTestCase {
             XCTAssertEqual(caughtToken, "tokenString")
         }
     }
+    
+    func testLoginInvalidJSONReturnsError() {
+        mockURLSession = MockURLSession(data: Data(), urlResponse: nil, responseError: nil)
+        sut.urlSession = mockURLSession
+        
+        let errorExpectation = expectation(description: "Error expectation")
+        
+        var caughtError: Error?
+        sut.login(withName: "login", password: "password") { (_, error) in
+            caughtError = error
+            errorExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 1) { _ in
+            XCTAssertNotNil(caughtError)
+        }
+    }
+    
+    func testLoginWhenDataIsNilReturnsError() {
+        mockURLSession = MockURLSession(data: nil, urlResponse: nil, responseError: nil)
+        sut.urlSession = mockURLSession
+        
+        let errorExpectation = expectation(description: "Error expectation")
+        
+        var caughtError: Error?
+        sut.login(withName: "login", password: "password") { (_, error) in
+            caughtError = error
+            errorExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 1) { _ in
+            XCTAssertNotNil(caughtError)
+        }
+    }
+    
+    func testLoginWhenErrorExistReturnsError() {
+        let jsonDataStub = "{\"token\": \"tokenString\"}".data(using: .utf8)
+        let error = NSError(domain: "Some Error", code: 404, userInfo: nil)
+        mockURLSession = MockURLSession(data: jsonDataStub, urlResponse: nil, responseError: error)
+        sut.urlSession = mockURLSession
+        
+        let errorExpectation = expectation(description: "Error expectation")
+        
+        var caughtError: Error?
+        sut.login(withName: "login", password: "password") { (_, error) in
+            caughtError = error
+            errorExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 1) { _ in
+            XCTAssertEqual(caughtError?.localizedDescription, error.localizedDescription)
+        }
+    }
 }
 
 extension APIClientsTests {
