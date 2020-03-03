@@ -12,14 +12,6 @@ import CoreLocation
 
 class LocationTests: XCTestCase {
 
-    override func setUp() {
-        
-    }
-
-    override func tearDown() {
-        
-    }
-    
     func testInitSetsName() {
         let location = Location(name: "Foo")
         
