@@ -4,12 +4,19 @@ var isPalindrome = true
 let candidateString = "А роза упала на лапу Азора"
 
 let candidateTrimmedString = candidateString.replacingOccurrences(of: " ", with: "")
+let reversedTrimmedString = String(candidateTrimmedString.reversed())
 
-for (charFromOriginalString, charFromReversedString) in zip(candidateTrimmedString.unicodeScalars, String(candidateTrimmedString.reversed()).unicodeScalars) {
+let startIndex = candidateTrimmedString.startIndex
+let charactersCount = candidateTrimmedString.count
+
+for i in 0..<charactersCount {
+    let indexFromOriginalString = candidateTrimmedString.index(startIndex, offsetBy: i)
+    let indexFromReversedString = reversedTrimmedString.index(startIndex, offsetBy: i)
     
-    let firstChar = Character(charFromOriginalString).lowercased()
-    let secondChar = Character(charFromReversedString).lowercased()
-    if firstChar != secondChar {
+    let charFromOriginalString = candidateTrimmedString[indexFromOriginalString].lowercased()
+    let charFromReversedString = reversedTrimmedString[indexFromReversedString].lowercased()
+    
+    if charFromOriginalString != charFromReversedString {
         isPalindrome = false
     }
 }
