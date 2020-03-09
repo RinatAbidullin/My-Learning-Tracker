@@ -15,3 +15,9 @@ print("-------")
 for unicodeScalar in someString.unicodeScalars {
     print(unicodeScalar)
 }
+
+print("-------")
+
+for char in someString {
+    print(char)
+}
