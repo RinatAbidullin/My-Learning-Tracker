@@ -23,3 +23,20 @@ for i in 0..<charactersCount {
 
 let result = isPalindrome ? "Это палиндром" : "Это не палиндром"
 print(result)
+
+//----------------
+
+var isPalindrome2 = true
+let candidateString2 = "А роза упала на лапу Азора"
+
+let candidateTrimmedString2 = candidateString2.replacingOccurrences(of: " ", with: "")
+let reversedTrimmedString2 = String(candidateTrimmedString2.reversed())
+
+for (charFromOriginalString, charFromReversedString) in zip(candidateTrimmedString2, reversedTrimmedString2) {
+    if charFromOriginalString.lowercased() != charFromReversedString.lowercased() {
+        isPalindrome2 = false
+    }
+}
+
+let result2 = isPalindrome2 ? "Это палиндром" : "Это не палиндром"
+print(result2)
