@@ -22,7 +22,7 @@ for i in 0..<charactersCount {
 }
 
 let result = isPalindrome ? "Это палиндром" : "Это не палиндром"
-print(result)
+print(candidateString + " - " + result)
 
 //----------------
 
@@ -39,4 +39,4 @@ for (charFromOriginalString, charFromReversedString) in zip(candidateTrimmedStri
 }
 
 let result2 = isPalindrome2 ? "Это палиндром" : "Это не палиндром"
-print(result2)
+print(candidateString2 + " - " + result2)
