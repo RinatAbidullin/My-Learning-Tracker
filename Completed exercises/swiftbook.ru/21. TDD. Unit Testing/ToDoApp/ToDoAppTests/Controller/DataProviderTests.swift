@@ -29,6 +29,11 @@ class DataProviderTests: XCTestCase {
         tableView.dataSource = sut
         tableView.delegate = sut
     }
+    
+    override func tearDown() {
+        sut.taskManager?.removeAll()
+        super.tearDown()
+    }
 
     func testNumberOfSectionIsTwo() {
         let numberOfSection = tableView.numberOfSections
