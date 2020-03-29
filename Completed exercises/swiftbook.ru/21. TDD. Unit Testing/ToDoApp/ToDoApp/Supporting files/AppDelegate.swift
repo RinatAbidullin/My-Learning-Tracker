@@ -17,12 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         #if targetEnvironment(simulator)
-        if let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            print("Tasks File Directory: \(documentPath)")
+        if CommandLine.arguments.contains("--UITesting") {
+            resetState()
         }
         #endif
         
         return true
+    }
+    
+    private func resetState() {
+        guard let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
+        let url = URL(string: "\(documentPath)tasks.plist") else { return }
+        try? FileManager.default.removeItem(at: url)
     }
 
     // MARK: UISceneSession Lifecycle
