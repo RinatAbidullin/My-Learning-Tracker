@@ -43,6 +43,10 @@ extension DataProvider: UITableViewDelegate {
             break
         }
     }
+    
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "Section \(section)"
+//    }
 }
 
 extension DataProvider: UITableViewDataSource {
