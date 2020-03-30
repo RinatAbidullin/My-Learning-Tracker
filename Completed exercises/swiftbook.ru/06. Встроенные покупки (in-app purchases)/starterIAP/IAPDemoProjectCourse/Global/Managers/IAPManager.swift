@@ -12,8 +12,9 @@ import StoreKit
 class IAPManager: NSObject {
     
     static let shared = IAPManager()
+    static let productNotoficationIdentifier = "IAPProductIdentifier"
     
-    private var products = [SKProduct]()
+    var products = [SKProduct]()
     
     private override init() {}
     
@@ -52,5 +53,8 @@ extension IAPManager: SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         self.products = response.products
         products.forEach { print($0.localizedTitle) }
+        if products.count > 0 {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: IAPManager.productNotoficationIdentifier), object: nil)
+        }
     }
 }

@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IAPManager.shared.setupPurchases { (success) in
             if success {
                 print("Can make payments")
-                IAPManager.shared.getProducts()
+                DispatchQueue.global().asyncAfter(deadline: .now() + 0.3) {
+                    IAPManager.shared.getProducts()
+                }
             }
         }
         return true
