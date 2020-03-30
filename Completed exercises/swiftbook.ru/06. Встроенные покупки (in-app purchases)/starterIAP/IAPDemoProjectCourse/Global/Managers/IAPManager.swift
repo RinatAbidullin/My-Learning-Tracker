@@ -13,6 +13,8 @@ class IAPManager: NSObject {
     
     static let shared = IAPManager()
     
+    private var products = [SKProduct]()
+    
     private override init() {}
     
     public func setupPurchases(callback: @escaping (Bool) -> ()) {
@@ -25,7 +27,16 @@ class IAPManager: NSObject {
     }
     
     public func getProducts() {
+        let identifiers: Set = [
+            IAPProducts.consumable.rawValue,
+            IAPProducts.nonConsumable.rawValue,
+            IAPProducts.autoRenewable.rawValue,
+            IAPProducts.nonRenewable.rawValue
+        ]
         
+        let productRequest = SKProductsRequest(productIdentifiers: identifiers)
+        productRequest.delegate = self
+        productRequest.start()
     }
 }
 
@@ -33,5 +44,13 @@ extension IAPManager: SKPaymentTransactionObserver {
     
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         
+    }
+}
+
+extension IAPManager: SKProductsRequestDelegate {
+    
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        self.products = response.products
+        products.forEach { print($0.localizedTitle) }
     }
 }

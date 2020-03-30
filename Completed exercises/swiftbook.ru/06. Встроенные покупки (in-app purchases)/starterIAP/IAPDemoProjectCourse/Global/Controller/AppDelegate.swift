@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IAPManager.shared.setupPurchases { (success) in
             if success {
                 print("Can make payments")
-//                IAPManager.shared
+                IAPManager.shared.getProducts()
             }
         }
         return true
