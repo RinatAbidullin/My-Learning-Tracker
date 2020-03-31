@@ -26,3 +26,7 @@
 4. Рисуем UI для покупок
 5. Тестирование покупок в среде Sandbox (Users and Roles)
 6. Публикация встроенных покупок и приложения в AppStore
+
+https://www.apple.com/certificateauthority/
+
+pod 'OpenSSL', :git => 'https://github.com/wzbozon/OpenSSL-Pod'

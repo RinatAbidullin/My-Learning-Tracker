@@ -1,0 +1,21 @@
+PODS:
+  - OpenSSL (1.0.213)
+
+DEPENDENCIES:
+  - OpenSSL (from `https://github.com/wzbozon/OpenSSL-Pod`)
+
+EXTERNAL SOURCES:
+  OpenSSL:
+    :git: https://github.com/wzbozon/OpenSSL-Pod
+
+CHECKOUT OPTIONS:
+  OpenSSL:
+    :commit: aa413e6def5ab74f5bd60ddbe98cb0cbaaef6539
+    :git: https://github.com/wzbozon/OpenSSL-Pod
+
+SPEC CHECKSUMS:
+  OpenSSL: 336ec50b5bc20b52dcd16cb1dd196f617d841e49
+
+PODFILE CHECKSUM: 80c8440cfec9cc4d45a7918ac03fd76cd516c5ee
+
+COCOAPODS: 1.8.4

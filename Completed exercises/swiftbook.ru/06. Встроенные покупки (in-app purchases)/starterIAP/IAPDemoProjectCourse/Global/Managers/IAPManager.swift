@@ -62,6 +62,8 @@ extension IAPManager: SKPaymentTransactionObserver {
             case .failed: failed(transaction: transaction)
             case .purchased: completed(transaction: transaction)
             case .restored: restored(transaction: transaction)
+            @unknown default:
+                break
             }
         }
     }

@@ -14,12 +14,17 @@
 		35D094EE1FA1A73D005C5BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D094EC1FA1A73D005C5BC5 /* LaunchScreen.storyboard */; };
 		35D095031FA1ABA8005C5BC5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D095021FA1ABA8005C5BC5 /* MainController.swift */; };
 		35D095051FA1ABCE005C5BC5 /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D095041FA1ABCE005C5BC5 /* PurchaseController.swift */; };
+		55084C2324336A4B009B39FA /* AppleIncRootCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 55084C2224336A43009B39FA /* AppleIncRootCertificate.cer */; };
+		55084C2924336DEB009B39FA /* pkcs7_union_accessors.c in Sources */ = {isa = PBXBuildFile; fileRef = 55084C2724336DEB009B39FA /* pkcs7_union_accessors.c */; };
+		55084C2B24336E3A009B39FA /* ReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55084C2A24336E3A009B39FA /* ReceiptValidator.swift */; };
 		558C6BF3243221E5008DC185 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558C6BF2243221E5008DC185 /* StoreKit.framework */; };
 		558C6BF5243224E7008DC185 /* IAPProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558C6BF4243224E7008DC185 /* IAPProducts.swift */; };
 		559309272432357700FBBC0D /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559309262432357700FBBC0D /* IAPManager.swift */; };
+		DE7336C1995D300408F7C16E /* Pods_IAPDemoProjectCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC94BEDB39BBDE04BE270506 /* Pods_IAPDemoProjectCourse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0684A270D9EA09D7007E96 /* Pods-IAPDemoProjectCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAPDemoProjectCourse.debug.xcconfig"; path = "Target Support Files/Pods-IAPDemoProjectCourse/Pods-IAPDemoProjectCourse.debug.xcconfig"; sourceTree = "<group>"; };
 		3534CE801FA1B45400E591BC /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
 		35D094E01FA1A73D005C5BC5 /* IAPDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAPDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D094E31FA1A73D005C5BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,9 +34,16 @@
 		35D094EF1FA1A73D005C5BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35D095021FA1ABA8005C5BC5 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		35D095041FA1ABCE005C5BC5 /* PurchaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseController.swift; sourceTree = "<group>"; };
+		55084C2224336A43009B39FA /* AppleIncRootCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleIncRootCertificate.cer; sourceTree = "<group>"; };
+		55084C2424336D78009B39FA /* IAPDemoProjectCourse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAPDemoProjectCourse-Bridging-Header.h"; sourceTree = "<group>"; };
+		55084C2724336DEB009B39FA /* pkcs7_union_accessors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs7_union_accessors.c; sourceTree = "<group>"; };
+		55084C2824336DEB009B39FA /* pkcs7_union_accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7_union_accessors.h; sourceTree = "<group>"; };
+		55084C2A24336E3A009B39FA /* ReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptValidator.swift; sourceTree = "<group>"; };
 		558C6BF2243221E5008DC185 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		558C6BF4243224E7008DC185 /* IAPProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProducts.swift; sourceTree = "<group>"; };
 		559309262432357700FBBC0D /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		DC94BEDB39BBDE04BE270506 /* Pods_IAPDemoProjectCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IAPDemoProjectCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35ADFBD4FAFFCCE8F44DD7C /* Pods-IAPDemoProjectCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAPDemoProjectCourse.release.xcconfig"; path = "Target Support Files/Pods-IAPDemoProjectCourse/Pods-IAPDemoProjectCourse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,18 +52,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				558C6BF3243221E5008DC185 /* StoreKit.framework in Frameworks */,
+				DE7336C1995D300408F7C16E /* Pods_IAPDemoProjectCourse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C71E54E2D86044A51776FC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C0684A270D9EA09D7007E96 /* Pods-IAPDemoProjectCourse.debug.xcconfig */,
+				F35ADFBD4FAFFCCE8F44DD7C /* Pods-IAPDemoProjectCourse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		35D094D71FA1A73D005C5BC5 = {
 			isa = PBXGroup;
 			children = (
 				35D094E21FA1A73D005C5BC5 /* IAPDemoProjectCourse */,
 				35D094E11FA1A73D005C5BC5 /* Products */,
 				C9059C0E1FA640DF00FB10CA /* Frameworks */,
+				0C71E54E2D86044A51776FC7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +89,7 @@
 		35D094E21FA1A73D005C5BC5 /* IAPDemoProjectCourse */ = {
 			isa = PBXGroup;
 			children = (
+				55084C21243369EE009B39FA /* Validation */,
 				35D094F51FA1AA70005C5BC5 /* Global */,
 				35D094F91FA1AA97005C5BC5 /* Main MVC */,
 				35D094FA1FA1AAB1005C5BC5 /* Purchase MVC */,
@@ -178,10 +202,22 @@
 		35D095011FA1AB7C005C5BC5 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				55084C2224336A43009B39FA /* AppleIncRootCertificate.cer */,
 				35D094EA1FA1A73D005C5BC5 /* Assets.xcassets */,
 				35D094EF1FA1A73D005C5BC5 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		55084C21243369EE009B39FA /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				55084C2A24336E3A009B39FA /* ReceiptValidator.swift */,
+				55084C2724336DEB009B39FA /* pkcs7_union_accessors.c */,
+				55084C2824336DEB009B39FA /* pkcs7_union_accessors.h */,
+				55084C2424336D78009B39FA /* IAPDemoProjectCourse-Bridging-Header.h */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		559309252432354800FBBC0D /* Managers */ = {
@@ -196,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				558C6BF2243221E5008DC185 /* StoreKit.framework */,
+				DC94BEDB39BBDE04BE270506 /* Pods_IAPDemoProjectCourse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35D094F21FA1A73D005C5BC5 /* Build configuration list for PBXNativeTarget "IAPDemoProjectCourse" */;
 			buildPhases = (
+				C4080DC2F261391C60FFF466 /* [CP] Check Pods Manifest.lock */,
 				35D094DC1FA1A73D005C5BC5 /* Sources */,
 				35D094DD1FA1A73D005C5BC5 /* Frameworks */,
 				35D094DE1FA1A73D005C5BC5 /* Resources */,
@@ -227,11 +265,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ivan Akulov";
 				TargetAttributes = {
 					35D094DF1FA1A73D005C5BC5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -266,11 +305,37 @@
 			files = (
 				35D094EE1FA1A73D005C5BC5 /* LaunchScreen.storyboard in Resources */,
 				35D094EB1FA1A73D005C5BC5 /* Assets.xcassets in Resources */,
+				55084C2324336A4B009B39FA /* AppleIncRootCertificate.cer in Resources */,
 				35D094E91FA1A73D005C5BC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4080DC2F261391C60FFF466 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IAPDemoProjectCourse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35D094DC1FA1A73D005C5BC5 /* Sources */ = {
@@ -280,6 +345,8 @@
 				559309272432357700FBBC0D /* IAPManager.swift in Sources */,
 				35D095031FA1ABA8005C5BC5 /* MainController.swift in Sources */,
 				35D095051FA1ABCE005C5BC5 /* PurchaseController.swift in Sources */,
+				55084C2B24336E3A009B39FA /* ReceiptValidator.swift in Sources */,
+				55084C2924336DEB009B39FA /* pkcs7_union_accessors.c in Sources */,
 				3534CE811FA1B45400E591BC /* CellIdentifiers.swift in Sources */,
 				35D094E41FA1A73D005C5BC5 /* AppDelegate.swift in Sources */,
 				558C6BF5243224E7008DC185 /* IAPProducts.swift in Sources */,
@@ -322,6 +389,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -329,6 +397,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -379,6 +448,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -386,6 +456,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -417,32 +488,41 @@
 		};
 		35D094F31FA1A73D005C5BC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0684A270D9EA09D7007E96 /* Pods-IAPDemoProjectCourse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CQ4XEPS9C;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/IAPDemoProjectCourse/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rinatabidullin.IAPDemoProject;
 				PRODUCT_NAME = IAPDemoProject;
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "IAPDemoProjectCourse/Validation/IAPDemoProjectCourse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		35D094F41FA1A73D005C5BC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35ADFBD4FAFFCCE8F44DD7C /* Pods-IAPDemoProjectCourse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CQ4XEPS9C;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/IAPDemoProjectCourse/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rinatabidullin.IAPDemoProject;
 				PRODUCT_NAME = IAPDemoProject;
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "IAPDemoProjectCourse/Validation/IAPDemoProjectCourse-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
