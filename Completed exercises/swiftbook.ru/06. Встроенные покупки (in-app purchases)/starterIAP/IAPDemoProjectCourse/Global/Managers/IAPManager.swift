@@ -47,7 +47,7 @@ class IAPManager: NSObject {
         paymentQueue.add(payment)
     }
     
-    public func restoreComplitedTransaction() {
+    public func restoreCompletedTransaction() {
         paymentQueue.restoreCompletedTransactions()
     }
 }
@@ -60,7 +60,7 @@ extension IAPManager: SKPaymentTransactionObserver {
             case .deferred: break
             case .purchasing: break
             case .failed: failed(transaction: transaction)
-            case .purchased: complited(transaction: transaction)
+            case .purchased: completed(transaction: transaction)
             case .restored: restored(transaction: transaction)
             }
         }
@@ -75,7 +75,8 @@ extension IAPManager: SKPaymentTransactionObserver {
         paymentQueue.finishTransaction(transaction)
     }
     
-    private func complited(transaction: SKPaymentTransaction) {
+    private func completed(transaction: SKPaymentTransaction) {
+        NotificationCenter.default.post(name: NSNotification.Name(transaction.payment.productIdentifier), object: nil)
         paymentQueue.finishTransaction(transaction)
     }
     
@@ -90,7 +91,7 @@ extension IAPManager: SKProductsRequestDelegate {
         self.products = response.products
         products.forEach { print($0.localizedTitle) }
         if products.count > 0 {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: IAPManager.productNotoficationIdentifier), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name(IAPManager.productNotoficationIdentifier), object: nil)
         }
     }
 }

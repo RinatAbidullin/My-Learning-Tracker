@@ -14,6 +14,7 @@ class PurchaseController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let iapManager = IAPManager.shared
+    let notificationCenter = NotificationCenter.default
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +22,31 @@ class PurchaseController: UIViewController {
         tableView.tableFooterView = UIView()
         setupNavigationBar()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(IAPManager.productNotoficationIdentifier), object: nil)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(reload),
+                                       name: NSNotification.Name(IAPManager.productNotoficationIdentifier),
+                                       object: nil)
+        
+        notificationCenter.addObserver(self,
+                                       selector: #selector(completeConsumable),
+                                       name: NSNotification.Name(IAPProducts.consumable.rawValue),
+                                       object: nil)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(completeNonConsumable),
+                                       name: NSNotification.Name(IAPProducts.nonConsumable.rawValue),
+                                       object: nil)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(completeAutoRenewable),
+                                       name: NSNotification.Name(IAPProducts.autoRenewable.rawValue),
+                                       object: nil)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(completeNonRenewable),
+                                       name: NSNotification.Name(IAPProducts.nonRenewable.rawValue),
+                                       object: nil)
     }
     
     @objc private func restorePurchases() {
-        iapManager.restoreComplitedTransaction()
+        iapManager.restoreCompletedTransaction()
     }
 
     private func setupNavigationBar() {
@@ -43,6 +64,22 @@ class PurchaseController: UIViewController {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    
+    @objc private func completeConsumable() {
+        print("Got consumable")
+    }
+    
+    @objc private func completeNonConsumable() {
+        print("Got non-consumable")
+    }
+    
+    @objc private func completeAutoRenewable() {
+        print("Got auto-renewable")
+    }
+    
+    @objc private func completeNonRenewable() {
+        print("Got non-renewable")
     }
     
     deinit {
