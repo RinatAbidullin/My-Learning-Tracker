@@ -46,6 +46,10 @@ class IAPManager: NSObject {
         let payment = SKPayment(product: product)
         paymentQueue.add(payment)
     }
+    
+    public func restoreComplitedTransaction() {
+        paymentQueue.restoreCompletedTransactions()
+    }
 }
 
 extension IAPManager: SKPaymentTransactionObserver {
@@ -55,11 +59,28 @@ extension IAPManager: SKPaymentTransactionObserver {
             switch transaction.transactionState {
             case .deferred: break
             case .purchasing: break
-            case .failed: print("Failed")
-            case .purchased: print("Purchased")
-            case .restored: print("Restored")
+            case .failed: failed(transaction: transaction)
+            case .purchased: complited(transaction: transaction)
+            case .restored: restored(transaction: transaction)
             }
         }
+    }
+    
+    private func failed(transaction: SKPaymentTransaction) {
+        if let transactionError = transaction.error as NSError? {
+            if transactionError.code != SKError.paymentCancelled.rawValue {
+                print("Ошибка транзакции: \(transaction.error!.localizedDescription)")
+            }
+        }
+        paymentQueue.finishTransaction(transaction)
+    }
+    
+    private func complited(transaction: SKPaymentTransaction) {
+        paymentQueue.finishTransaction(transaction)
+    }
+    
+    private func restored(transaction: SKPaymentTransaction) {
+        paymentQueue.finishTransaction(transaction)
     }
 }
 

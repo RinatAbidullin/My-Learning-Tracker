@@ -24,9 +24,8 @@ class PurchaseController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(IAPManager.productNotoficationIdentifier), object: nil)
     }
     
-    
     @objc private func restorePurchases() {
-        print("restoring purchases")
+        iapManager.restoreComplitedTransaction()
     }
 
     private func setupNavigationBar() {
