@@ -12,6 +12,8 @@ import StoreKit
 class PurchaseController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    let iapManager = IAPManager.shared
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +45,11 @@ class PurchaseController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        print("PurchaseController deinit")
+    }
 }
 
 extension PurchaseController: UITableViewDataSource {
@@ -53,13 +60,13 @@ extension PurchaseController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return IAPManager.shared.products.count
+        return iapManager.products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.purchaseCell, for: indexPath)
         
-        let product = IAPManager.shared.products[indexPath.row]
+        let product = iapManager.products[indexPath.row]
         cell.textLabel?.text = product.localizedTitle + " - " + self.priceString(forProduct: product)
         return cell
     }
@@ -68,7 +75,8 @@ extension PurchaseController: UITableViewDataSource {
 
 extension PurchaseController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        let identifier = iapManager.products[indexPath.row].productIdentifier
+        iapManager.purchase(productWith: identifier)
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
