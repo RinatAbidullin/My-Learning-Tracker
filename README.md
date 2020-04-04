@@ -16,6 +16,7 @@
 | --- | --- | --- |
 | Intro to App Dev with Swift | 06.08.2019 - 19.08.2019 | 100% |
 | Усов В.А. - Swift. Основы разработки приложений под iOS и macOS (5-е издание) | 02.12.2019 - 26.01.2020 | 100% |
-| 27 видеокурсов ресурса https://swiftbook.ru/courses/ | 27.01.2020 - ... | 40,7% |
-| https://githowto.com/ru | | |
-| https://learngitbranching.js.org | | |
+| 27 видеокурсов ресурса [swiftbook.ru](https://swiftbook.ru/courses/) | 27.01.2020 - ... | 40,7% |
+| Летний Курс Swift 2019, [BWSwift](https://www.youtube.com/playlist?list=PLnlik7Rjo4n0WRU_c2OPPbvn3oVPZN3Ep) | 01.04.2020 - ... | 12,5% |
+| [githowto.com/ru](https://githowto.com/ru) | | |
+| [learngitbranching.js.org](https://learngitbranching.js.org) | | |
