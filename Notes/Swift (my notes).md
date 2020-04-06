@@ -6,23 +6,23 @@
 
 четыре Named types или Nominal types:
 
-- protocol: Value type (но может быть и Reference type)
+- `protocol`: Value type (но может быть и Reference type)
 
-- struct: Value type
+- `struct`: Value type
 
-- enum: Value type
+- `enum`: Value type
 
-- class: Reference type
+- `class`: Reference type
 
 и два Unnamed/Compound types:
 
-- tuple: Value type
+- `tuple`: Value type
 
-- function: Reference type
+- `function`: Reference type
 
 ## Случаи, когда Value type размещается в heap
 
-1. Когда согласуется/соответствует протоколу (when conforming to a protocol)
+#### 1. Когда согласуется/соответствует протоколу (when conforming to a protocol)
 
 Apart from the allocation cost, extra overhead appears when value type is stored within an existential container and exceeds 3 machine words length.
 
@@ -33,44 +33,44 @@ protocol Bar {}
 struct Baz: Bar {}
 ```
 
-2. Когда миксуются Value и Reference types (when mixing Value and Reference types)
+#### 2. Когда миксуются Value и Reference types (when mixing Value and Reference types)
 
 ```swift
 // Class inside a struct
 class A {}
 struct B {
-	let a = A()
+    let a = A()
 }
 
 // Struct inside a class
 struct C {}
 class D {
-	let c = C()
+    let c = C()
 }
 ```
 
 Оба случая структур `B` и `C` размещаются в куче (heap)
 
-3. Generic value types
+#### 3. Generic value types
 
 ```swift
 struct Bas<T> {
-	var x: T
-	init(xx: T) {
-		x = xx
-	}
+    var x: T
+    init(xx: T) {
+        x = xx
+    }
 }
 ```
 
-4. Escaping closure captures.
+#### 4. Escaping closure captures.
 
 Swift’s closure model is that all local variables are captured by reference. Some of them may still be promoted to the stack as explained in CapturePromotion.
 
-5. Inout arguments.
+#### 5. Inout arguments.
 
 Let’s generate SIL for foo(x:) that accepts an inout argument:
 
-```
+```swift
 func foo(x: inout Int) {
     x += 1
 }
