@@ -75,3 +75,49 @@ func foo(x: inout Int) {
     x += 1
 }
 ```
+
+## How to make UITableViewCells auto resize to their content
+
+```swift
+override func viewDidLoad() {
+    tableView.rowHeight = UITableView.automaticDimension
+	tableView.estimatedRowHeight = 100
+}
+```
+```swift
+func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableView.automaticDimension
+}
+```
+```swift
+override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableView.automaticDimension
+}
+```
+In order to make UITableViewAutomaticDimension work you have to set all left, right, bottom, and top constraints relative to cell `contentView`.
+
+Note: You may need to put this code inside your cellForRowAt
+
+```swift
+yourCellName.sizeToFit()
+cell.textLabel?.numberOfLines = 0
+```
+
+## Создаем проект без сториборда
+
+```swift
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+    let window = UIWindow(windowScene: windowScene)
+        
+    let mainViewController = SomeViewController()
+        
+    let navigationController = UINavigationController(rootViewController: mainViewController)
+        
+    window.rootViewController = navigationController
+        
+    window.makeKeyAndVisible()
+    self.window = window
+}
+```
