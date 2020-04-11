@@ -81,7 +81,7 @@ func foo(x: inout Int) {
 ```swift
 override func viewDidLoad() {
     tableView.rowHeight = UITableView.automaticDimension
-	tableView.estimatedRowHeight = 100
+    tableView.estimatedRowHeight = 100
 }
 ```
 ```swift
