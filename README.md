@@ -34,3 +34,4 @@
 
 * [Texture](https://texturegroup.org)
 * [RxSwift](https://github.com/ReactiveX/RxSwift)
+* [R.swift](https://github.com/mac-cain13/R.swift): Add the \*.generated.swift pattern to your .gitignore file to prevent unnecessary conflicts
