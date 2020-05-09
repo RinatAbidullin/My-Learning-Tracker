@@ -21,3 +21,16 @@
 | [Многопоточность в iOS (Swift)](https://stepik.org/course/3278) | 09.04.2020 - ... | 20,5% |
 | [githowto.com/ru](https://githowto.com/ru) | | |
 | [learngitbranching.js.org](https://learngitbranching.js.org) | | |
+
+## Полезные ссылки
+
+* [rxmarbles.com](https://rxmarbles.com/)
+* [developer.apple.com/support/app-store](https://developer.apple.com/support/app-store/), можно посмотреть статистику по процентному соотношению версий iOS
+* [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
+* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, SwiftPM, macOS
+* [Шрифты](https://www.fonts-online.ru/)
+
+## Библиотеки
+
+* [Texture](https://texturegroup.org)
+* [RxSwift](https://github.com/ReactiveX/RxSwift)
