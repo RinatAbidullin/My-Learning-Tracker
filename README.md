@@ -27,11 +27,12 @@
 * [rxmarbles.com](https://rxmarbles.com/)
 * [developer.apple.com/support/app-store](https://developer.apple.com/support/app-store/), можно посмотреть статистику по процентному соотношению версий iOS
 * [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
-* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, SwiftPM, macOS
+* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, SwiftPM, macOS, fastlane
 * [Шрифты](https://www.fonts-online.ru/)
+* [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 
 ## Библиотеки
 
 * [Texture](https://texturegroup.org)
 * [RxSwift](https://github.com/ReactiveX/RxSwift)
-* [R.swift](https://github.com/mac-cain13/R.swift): Add the \*.generated.swift pattern to your .gitignore file to prevent unnecessary conflicts
+* [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts
