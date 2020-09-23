@@ -37,9 +37,33 @@ git rebase --continue // если были конфликты
 git push --force-with-lease origin working-branch
 ```
 
-### Скачать удаленную ветку, которая была отрибейсена
+## Скачать удаленную ветку, которая была отрибейсена
 
 `git pull --rebase origin NSDPRD-13404`
 
-### Fetching changes from a remote repository
+## Fetching changes from a remote repository
 `git fetch remotename` // git fetch origin
+
+## Количество коммитов в ветке
+
+To count the commits for the branch you are on:
+
+`git rev-list --count HEAD`
+
+for a branch:
+
+`git rev-list --count <branch-name>`
+
+If you want to count the commits on a branch that are made since you created the branch:
+
+`git rev-list --count HEAD ^<branch-name>`
+
+Example:
+
+```
+git checkout develop
+git checkout -b test
+<We do 3 commits>
+git rev-list --count HEAD ^develop
+Result: 3
+```
