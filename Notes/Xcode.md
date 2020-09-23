@@ -81,3 +81,18 @@ You can specify the following options to the command.
 ## Address Sanitizer
 
 `enableAddressSanitizer = "YES"` (Edit Scheme -> Run -> Diagnostics -> Address Sanitizer) - может привести к увеличению размера приложения и фреймворков примерно в два раза.
+
+## Версия Xcode
+
+`$ xcodebuild -version`
+
+Xcode 11.7
+Build version 11E801a
+
+## Версия macOS
+
+`$ sw_vers`
+
+ProductName:	Mac OS X
+ProductVersion:	10.15.6
+BuildVersion:	19G2021
