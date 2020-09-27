@@ -16,12 +16,19 @@
 
 ### Объединяем коммиты в один
 
+Находимся в рабочей ветке
+
 ```
-git log -5
+git rev-list --count HEAD ^develop // 5
 git rebase -i HEAD~5
 git log -1
-git push --force-with-lease origin NSDPRD-12854
+git push --force-with-lease origin branchName
 ```
+
+Можно обойтись одной строкой:
+
+`git rev-list --count develop..HEAD | xargs printf -- 'HEAD~%s' | xargs git rebase -i`
+
 ### rebase основной ветки в текущую рабочую
 
 ```
@@ -52,11 +59,14 @@ To count the commits for the branch you are on:
 
 for a branch:
 
-`git rev-list --count <branch-name>`
+`git rev-list --count branch`
 
 If you want to count the commits on a branch that are made since you created the branch:
 
-`git rev-list --count HEAD ^<branch-name>`
+```
+git rev-list --count HEAD ^branch
+git rev-list --count branch..HEAD
+```
 
 Example:
 
@@ -64,6 +74,32 @@ Example:
 git checkout develop
 git checkout -b test
 <We do 3 commits>
-git rev-list --count HEAD ^develop
+git rev-list --count HEAD ^develop  // or git rev-list --count develop..HEAD
 Result: 3
 ```
+
+## cherry-pick
+
+Для применения коммита e43a6 к текущей ветке выполните команду:
+
+`git cherry-pick e43a6`
+
+## xargs - append each argument with a parameter
+
+The simplest way to prefix arguments is via `printf` in conjunction with the command substitution:
+
+```
+mycommand $(printf '-f %s' $"a b c") // l = "a b c"
+mycommand $(printf '-%s' "2")
+```
+
+Alternatively, the command substitution `$()` can be rewritten by piping to `xargs`:
+
+```
+echo "a b c" | xargs printf -- '-f %s\n' | xargs mycommand
+echo "a b c" | xargs printf '-f %s\n' | xargs mycommand
+```
+
+The command substitution allows to control location of the dynamic arguments in the argument list. For instance, you can prepend, append, or even place the arguments anywhere in between any other fixed arguments to be passed to mycommand.
+
+The xargs approach works best to append arguments to the end, but it requires a more obscure syntax to handle different placement of dynamic arguments among fixed ones.

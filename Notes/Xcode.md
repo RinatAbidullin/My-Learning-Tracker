@@ -96,3 +96,13 @@ Build version 11E801a
 ProductName:	Mac OS X
 ProductVersion:	10.15.6
 BuildVersion:	19G2021
+
+## OTHER_SWIFT_FLAGS
+
+### Xcode 11:
+
+`-fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps/iphonesimulator/RxCocoaRuntime.modulemap`
+
+### Xcode 12:
+
+`-fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps-iphonesimulator/RxCocoaRuntime.modulemap`
