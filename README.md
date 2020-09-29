@@ -30,6 +30,7 @@
 * [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, SwiftPM, macOS, fastlane
 * [Шрифты](https://www.fonts-online.ru/)
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
+* [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
 
 ## Библиотеки
 
