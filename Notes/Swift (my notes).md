@@ -121,3 +121,17 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
     self.window = window
 }
 ```
+
+## Альтернативный вариант тернарного оператора
+
+```swift
+let host = challenge.protectionSpace.host
+let port = challenge.protectionSpace.port
+let scheme = challenge.protectionSpace.protocol // <- Может быть nil
+
+let hostWithPortAndScheme = scheme.map { "\($0)://\(host):\(port)" } ?? "\(host):\(port)"
+```
+
+```swift
+let date = OnboardingAssembly.onboardingEndDate.map({ Date() < $0 }) ?? true
+```

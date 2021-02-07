@@ -1,5 +1,17 @@
 # Git
 
+## Первоначальная настройка
+
+`$ git config --global user.name "John Doe"`
+`$ git config --global user.email johndoe@example.com`
+
+// Sublime Text
+`$ git config --global core.editor "subl -n -w"`
+`ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl`
+
+// Проверка настроек
+`$ git config --list`
+
 ## Contribution
 
 1. Fork it!
@@ -103,3 +115,23 @@ echo "a b c" | xargs printf '-f %s\n' | xargs mycommand
 The command substitution allows to control location of the dynamic arguments in the argument list. For instance, you can prepend, append, or even place the arguments anywhere in between any other fixed arguments to be passed to mycommand.
 
 The xargs approach works best to append arguments to the end, but it requires a more obscure syntax to handle different placement of dynamic arguments among fixed ones.
+
+## Добавить файл в последний коммит
+
+```
+git add the_left_out_file // Добавляем измененные файлы
+git commit --amend --no-edit
+```
+
+## Поиск в истории репозитория
+
+```
+git log -S someString
+git log -p -S 'some string'
+```
+
+This will find any commit that added or removed the string `someString`. Here a few options:
+
+`-p`: will show the diffs. If you provide a file (`-p file`), it will generate a patch for you.
+`-G`: looks for differences whose added or removed line matches the given regexp, as opposed to `-S`, which "looks for differences that introduce or remove an instance of string".
+`--all`: searches over all branches and tags; alternatively, use `--branches[=<pattern>]` or `--tags[=<pattern>]`

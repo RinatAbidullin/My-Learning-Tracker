@@ -76,6 +76,8 @@ You can specify the following options to the command.
 
 ## Pod
 
+`pod deintegrate`
+
 `pod install --repo-update`
 
 ## Address Sanitizer
@@ -106,3 +108,33 @@ BuildVersion:	19G2021
 ### Xcode 12:
 
 `-fmodule-map-file=$(PROJECT_TEMP_ROOT)/GeneratedModuleMaps-iphonesimulator/RxCocoaRuntime.modulemap`
+
+## Послать Push Notification на симулятор
+
+`xcrun simctl push B1831415-E6DE-448D-BD71-4B46B3054D9D com.RinatAbidullin.Notifications first.apn`
+
+## При переименовании проекта и папки (группы) с файлами проекта
+
+* `Info.plist` не должен быть включен в таргеты 
+
+* В `Info.plist` указать `Storyboard Name` в разделе `Application Scene Manifest`
+
+* В тартеге тестов в разделе `General` выбрать `Host Application`
+
+* В `Build Settings` таргетов поправить путь до файлов `Info.plist`
+
+* Удалить папку с приложением в `Derived Data`
+
+* Выполнить `Clean Build Folder`
+
+## Путь до файла Package.resolved
+
+`YourProgect.xcworkspace/xcshareddata/swiftpm/Package.resolved`
+
+## Путь до папки DerivedData
+
+`~/Library/Developer/Xcode/DerivedData`
+
+## Изменить стандартное расположение папки со скриншотами с симулятора
+
+In Xcode 12 we now always set the default location to wherever you last saved a screenshot, so to change the default location press `⌥ + ⌘ + S` then select the location.
