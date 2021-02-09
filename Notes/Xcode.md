@@ -138,3 +138,13 @@ BuildVersion:	19G2021
 ## Изменить стандартное расположение папки со скриншотами с симулятора
 
 In Xcode 12 we now always set the default location to wherever you last saved a screenshot, so to change the default location press `⌥ + ⌘ + S` then select the location.
+
+## How to show touch on iOS Simulator
+
+Open a terminal and type this:
+
+`defaults write com.apple.iphonesimulator ShowSingleTouches 1`
+
+Restart the iOS Simulator.
+
+For recorded video: Settings > Touch > Accessibility > AssistiveTouch

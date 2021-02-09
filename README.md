@@ -37,3 +37,4 @@
 * [Texture](https://texturegroup.org)
 * [RxSwift](https://github.com/ReactiveX/RxSwift)
 * [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts
+* [ShowTime](https://github.com/KaneCheshire/ShowTime): ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
