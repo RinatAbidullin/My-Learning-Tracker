@@ -135,3 +135,11 @@ let hostWithPortAndScheme = scheme.map { "\($0)://\(host):\(port)" } ?? "\(host)
 ```swift
 let date = OnboardingAssembly.onboardingEndDate.map({ Date() < $0 }) ?? true
 ```
+
+## Директории на iOS
+
+```swift
+func NSTemporaryDirectory() -> String
+func NSHomeDirectory() -> String
+func NSHomeDirectoryForUser(String?) -> String?
+```
