@@ -143,3 +143,31 @@ func NSTemporaryDirectory() -> String
 func NSHomeDirectory() -> String
 func NSHomeDirectoryForUser(String?) -> String?
 ```
+
+## Custom init()
+
+### UIView
+
+```swift
+init(frame: CGRect, someProperty: SomeType) {
+    self.someProperty = someProperty
+    super.init(frame: frame)
+}
+
+required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+}
+```
+
+### UIViewController
+
+```swift
+init(someProperty: SomeType) {
+    self.someProperty = someProperty
+    super.init(nibName: nil, bundle: nil)
+}
+
+required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+}
+```
