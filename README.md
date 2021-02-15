@@ -31,14 +31,23 @@
 * [Шрифты](https://www.fonts-online.ru/)
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 * [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
+* [Typora](https://typora.io/): Markdown Editor.
 
 ## Библиотеки
 
 * [Awesome Swift](https://github.com/matteocrippa/awesome-swift)
 * [Awesome iOS](https://github.com/vsouza/awesome-ios)
+* [Awesome iOS UI](https://github.com/varabeis/awesome-ios-ui)
 * [Texture](https://texturegroup.org)
 * [RxSwift](https://github.com/ReactiveX/RxSwift)
-* [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts
+* [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts.
 * [ShowTime](https://github.com/KaneCheshire/ShowTime): ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
 * [Socket.IO-Client-Swift](https://github.com/socketio/socket.io-client-swift)
 * [MessageKit](https://github.com/MessageKit/MessageKit)
+* [SwiftyStoreKit](https://github.com/bizz84/SwiftyStoreKit)
+* [SQLite.swift](https://github.com/stephencelis/SQLite.swift)
+* [Jazzy](https://github.com/realm/jazzy/): Jazzy is a command-line utility that generates documentation for Swift or Objective-C.
+* [Swinject](https://github.com/Swinject/Swinject): Swinject is a lightweight dependency injection framework for Swift.
+* [Resolver](https://github.com/hmlongco/Resolver): An ultralight Dependency Injection / Service Locator framework for Swift 5.2 on iOS.
+* [SwiftDI](https://github.com/achernoprudov/SwiftDI): Simple dependency injection library for swift projects.
+* [Haptica](https://github.com/efremidze/Haptica): Haptica is an easy haptic feedback generator.
