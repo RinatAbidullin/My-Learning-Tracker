@@ -164,6 +164,13 @@ git add .
 git commit -m "Update repository with new .gitignore"
 ```
 
+* `rm` is the remove command
+* `-r` will allow recursive removal
+* `–cached` will only remove files from the index. Your files will still be there.
+* The `.` indicates that all files will be untracked. You can untrack a specific file with `git rm --cached foo.txt`
+
+The `rm` command can be unforgiving. If you wish to try what it does beforehand, add the `-n` or `--dry-run` flag to test things out.
+
 ## Удалить последний коммит
 
 ```
