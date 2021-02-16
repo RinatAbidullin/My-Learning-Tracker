@@ -27,11 +27,12 @@
 * [rxmarbles.com](https://rxmarbles.com/)
 * [developer.apple.com/support/app-store](https://developer.apple.com/support/app-store/), можно посмотреть статистику по процентному соотношению версий iOS
 * [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
-* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, SwiftPM, macOS, fastlane
+* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, macOS, fastlane
 * [Шрифты](https://www.fonts-online.ru/)
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 * [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
 * [Typora](https://typora.io/): Markdown Editor.
+* [HTML5 WebSocket test](https://www.websocket.org/echo.html): Echo Test
 
 ## Библиотеки
 
@@ -51,3 +52,6 @@
 * [Resolver](https://github.com/hmlongco/Resolver): An ultralight Dependency Injection / Service Locator framework for Swift 5.2 on iOS.
 * [SwiftDI](https://github.com/achernoprudov/SwiftDI): Simple dependency injection library for swift projects.
 * [Haptica](https://github.com/efremidze/Haptica): Haptica is an easy haptic feedback generator.
+* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+* [Alamofire][https://github.com/Alamofire/Alamofire]
+

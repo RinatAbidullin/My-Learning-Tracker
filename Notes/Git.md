@@ -153,3 +153,11 @@ A way to remember this is `-m` is for "move" (or `mv`), which is how you rename 
 If you are on Windows or another case-insensitive filesystem, and there are only capitalization changes in the name, you need to use `-M`, otherwise, git will throw branch already exists error:
 
 `git branch -M <newname>`
+
+## Обновление .gitignore
+
+git add .gitignore
+git commit -m "Update .gitignore"
+git rm -r --cached .
+git add .
+git commit -m "Update repository with new .gitignore"
