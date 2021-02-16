@@ -27,7 +27,7 @@
 * [rxmarbles.com](https://rxmarbles.com/)
 * [developer.apple.com/support/app-store](https://developer.apple.com/support/app-store/), можно посмотреть статистику по процентному соотношению версий iOS
 * [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
-* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, CocoaPods, Carthage, macOS, fastlane
+* [gitignore.io](https://www.gitignore.io/): Xcode, Swift, macOS, fastlane
 * [Шрифты](https://www.fonts-online.ru/)
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 * [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
