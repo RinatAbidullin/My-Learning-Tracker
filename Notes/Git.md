@@ -156,8 +156,17 @@ If you are on Windows or another case-insensitive filesystem, and there are only
 
 ## Обновление .gitignore
 
+```
 git add .gitignore
 git commit -m "Update .gitignore"
 git rm -r --cached .
 git add .
 git commit -m "Update repository with new .gitignore"
+```
+
+## Удалить последний коммит
+
+```
+git rebase -i HEAD~1
+Выбрать d (delete)
+```
