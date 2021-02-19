@@ -177,3 +177,19 @@ The `rm` command can be unforgiving. If you wish to try what it does beforehand,
 git rebase -i HEAD~1
 Выбрать d (delete)
 ```
+
+## How to ignore Icon? in git
+
+The best place for this is in your global gitignore configuration file. You can create this file, access it, and then edit per the following steps:
+
+`>> git config --global core.excludesfile ~/.gitignore_global`
+
+`>> vim ~/.gitignore_global`
+
+press `i` to enter insert mode
+
+type `Icon` on a new line
+
+while on the same line, `ctrl + v`, `enter`, `ctrl + v`, `enter`
+
+press `esc`, then `shift + ;` then type `wq` then hit `enter`
