@@ -34,6 +34,7 @@
 * [Json Editor Online](https://jsoneditoronline.org/)
 * [Typora](https://typora.io/): Markdown Editor.
 * [HTML5 WebSocket test](https://www.websocket.org/echo.html): Echo Test
+* [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
 
 ## Библиотеки
 
@@ -57,4 +58,12 @@
 * [Haptica](https://github.com/efremidze/Haptica): Haptica is an easy haptic feedback generator.
 * [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 * [Alamofire](https://github.com/Alamofire/Alamofire)
+
+## App Store
+
+* [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925)
+* [iOS version by device](https://iosref.com/ios)
+* [Support: App Store Connect](https://developer.apple.com/support/app-store-connect)
+* [Apple Design Resources](https://developer.apple.com/design/resources/)
+* [iOS Resolution: All the pixels you need](https://ios-resolution.com/)
 
