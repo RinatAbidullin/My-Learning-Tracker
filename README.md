@@ -88,6 +88,10 @@
 
 * [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts.
 
+#### Encryption
+
+* [OpenSSL package for SPM](https://github.com/krzyzanowskim/OpenSSL)
+
 ## App Store
 
 * [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925)
