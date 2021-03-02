@@ -250,3 +250,9 @@ git branch -d <branch> # Shorter version
 git branch -D <branch> # Force-delete un-merged branches
 ```
 
+## Сравнение локальной и remote-ветки
+
+```bash
+git diff origin/branchName branchName --color-words
+```
+
