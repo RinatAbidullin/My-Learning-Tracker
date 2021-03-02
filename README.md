@@ -28,6 +28,7 @@
 * [developer.apple.com/support/app-store](https://developer.apple.com/support/app-store/), можно посмотреть статистику по процентному соотношению версий iOS
 * [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
 * [gitignore.io](https://www.gitignore.io/): Xcode, Swift, macOS, fastlane
+* [Collection of `.gitignore` templates](https://github.com/github/gitignore)
 * [Шрифты](https://www.fonts-online.ru/)
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 * [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
@@ -38,26 +39,54 @@
 
 ## Библиотеки
 
+#### Awesome
+
 * [Awesome Swift](https://github.com/matteocrippa/awesome-swift)
 * [Awesome iOS](https://github.com/vsouza/awesome-ios)
 * [Awesome iOS UI](https://github.com/varabeis/awesome-ios-ui)
-* [Collection of `.gitignore` templates](https://github.com/github/gitignore)
-* [Texture](https://texturegroup.org)
-* [RxSwift](https://github.com/ReactiveX/RxSwift)
-* [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts.
-* [ShowTime](https://github.com/KaneCheshire/ShowTime): ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
-* [Socket.IO-Client-Swift](https://github.com/socketio/socket.io-client-swift)
+
+#### Network
+
+* [Alamofire](https://github.com/Alamofire/Alamofire)
 * [Starscream](https://github.com/daltoniam/Starscream)
+* [Socket.IO-Client-Swift](https://github.com/socketio/socket.io-client-swift)
+* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+
+#### UI
+
+* [Texture](https://texturegroup.org)
 * [MessageKit](https://github.com/MessageKit/MessageKit)
-* [SwiftyStoreKit](https://github.com/bizz84/SwiftyStoreKit)
+* [ShowTime](https://github.com/KaneCheshire/ShowTime): ShowTime is the simplest and best way to display all your taps and gestures on screen. Perfect for that demo, presentation or video.
+
+#### DB
+
 * [SQLite.swift](https://github.com/stephencelis/SQLite.swift)
-* [Jazzy](https://github.com/realm/jazzy/): Jazzy is a command-line utility that generates documentation for Swift or Objective-C.
+
+#### Reactive Events
+
+* [RxSwift](https://github.com/ReactiveX/RxSwift)
+
+#### DI
+
 * [Swinject](https://github.com/Swinject/Swinject): Swinject is a lightweight dependency injection framework for Swift.
 * [Resolver](https://github.com/hmlongco/Resolver): An ultralight Dependency Injection / Service Locator framework for Swift 5.2 on iOS.
 * [SwiftDI](https://github.com/achernoprudov/SwiftDI): Simple dependency injection library for swift projects.
+
+#### Hardware
+
 * [Haptica](https://github.com/efremidze/Haptica): Haptica is an easy haptic feedback generator.
-* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
-* [Alamofire](https://github.com/Alamofire/Alamofire)
+
+#### App Store
+
+* [SwiftyStoreKit](https://github.com/bizz84/SwiftyStoreKit)
+
+#### Documentation
+
+* [Jazzy](https://github.com/realm/jazzy/): Jazzy is a command-line utility that generates documentation for Swift or Objective-C.
+
+#### Utility
+
+* [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts.
 
 ## App Store
 
