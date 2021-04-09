@@ -25,7 +25,6 @@
 ## Полезные ссылки
 
 * [rxmarbles.com](https://rxmarbles.com/)
-* [developer.apple.com/support/app-store](https://developer.apple.com/support/app-store/), можно посмотреть статистику по процентному соотношению версий iOS
 * [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
 * [gitignore.io](https://www.gitignore.io/): Xcode, Swift, macOS, fastlane
 * [Collection of `.gitignore` templates](https://github.com/github/gitignore)
@@ -96,9 +95,11 @@
 
 ## App Store
 
+* [Статистика по процентному соотношению версий iOS](https://developer.apple.com/support/app-store/)
 * [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925)
 * [iOS version by device](https://iosref.com/ios)
 * [Support: App Store Connect](https://developer.apple.com/support/app-store-connect)
 * [Apple Design Resources](https://developer.apple.com/design/resources/)
 * [iOS Resolution: All the pixels you need](https://ios-resolution.com/)
+* [Optimizing Your Product Page](https://developer.apple.com/app-store/product-page/)
 
