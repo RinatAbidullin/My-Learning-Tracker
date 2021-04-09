@@ -25,7 +25,7 @@ func method1() {
 
 In comparison, Asynchronous Processing handles multiple items at the same time. It would e.g. process item1, pause for item2 and then continue and finish with item1.
 
-![img](Parallel programming with Swift. Basics.assets/1*3NJytE_PeEZF4sQAQ2J2RQ.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*3NJytE_PeEZF4sQAQ2J2RQ.png)
 
 An example in code would be a simple callback. We can see the code at the end being executed before the callback is processed.
 
@@ -44,7 +44,7 @@ Often concurrency and parallelism are used interchangeably (even Wikipedia uses 
 
 Try to imagine, that we have a stack of boxes at position A and we want to transport them to position B. To do so, we can use workers. In a synchronous environment, we could only use 1 worker to do this. He would carry 1 box at a time, all the way from position A to position B.
 
-![img](Parallel programming with Swift. Basics.assets/1*CXF9pmApDCBMjVqbvsiluA.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*CXF9pmApDCBMjVqbvsiluA.png)
 
 But let’s imagine we could use multiple workers at the same time. Each of them would take a box and carry it all the way. This would increase our productivity by quite a lot, wouldn’t it? Since we use multiple workers, it would increase by the same factor as the number of workers we have. As long as at least 2 workers carry boxes at the same time, they do it in parallel.
 
@@ -52,11 +52,11 @@ But let’s imagine we could use multiple workers at the same time. Each of them
 
 But what happens, if we have just 1 worker and might be able to use more than this? We should consider having multiple boxes in the processing state. This is what concurrency is about. It can be seen as dividing the distance from A to B in multiple steps. The worker could carry a box from A to the halfway point of the whole distance and then get back to A to grab the next box. Using multiple workers we could make them all carry the boxes a different distance. This way we process the boxes asynchronously. In case we have multiple workers, we process the boxes in parallel.
 
-![img](Parallel programming with Swift. Basics.assets/1*D_sAPRRyyYnq7EXsZHVdHQ.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*D_sAPRRyyYnq7EXsZHVdHQ.png)
 
 So the difference between parallelism and concurrency is simple. Parallelism is about doing work at the same time. Concurrency is about the option to do work at the same time. It doesn’t have to be parallel, but it could be. Most of our computers and mobile devices can work in parallel (due to the number of cores) but every software you have definitely works concurrently.
 
-![img](Parallel programming with Swift. Basics.assets/1*jGBryeDrAeYMLDF-C9_rzg.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*jGBryeDrAeYMLDF-C9_rzg.png)
 
 # Mechanisms for Concurrency
 
@@ -102,7 +102,7 @@ This isn’t really concurrent yet, right? Especially when looking into SerialQu
 
 Let’s consider what happens if we have multiple queues. We could just run a queue on a thread and then whenever we schedule a task, add this into one of the queues. Adding some brain power, we could even distribute the incoming tasks for priority and current workload, thus optimizing our system resources.
 
-![img](Parallel programming with Swift. Basics.assets/1*i-dH4UH99Ykisz3kQZgrQQ.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*i-dH4UH99Ykisz3kQZgrQQ.png)
 
 Apple’s implementation of the above is called Grand Central Dispatch (or GCD for short). How is this handled in iOS?
 
@@ -166,13 +166,13 @@ To understand the different locking mechanisms we also need to understand thread
 
 Imagine having two high priority threads (1 & 2) and a low priority thread (3). If 3 blocks a resource 1 wants to access, 1 will have to wait. Since 2 has a higher priority, all its work will be done first. In cases, where this doesn’t end, thread 3 will not be executed and thus thread 1 will be blocked indefinitely.
 
-![img](Parallel programming with Swift. Basics.assets/1*xqK9qAYhu2LuCxGqTTbvuA.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*xqK9qAYhu2LuCxGqTTbvuA.png)
 
 ## Priority Inheritance
 
 A solution to Priority Inversion is Priority Inheritance. In this case, thread 1 would surrender it’s priority to thread 3, as long as it is blocked. So thread 3 and 2 have a high priority and get both executed (depending on the OS). As soon as 3 unlocks the resource, the high priority is back to thread 1 and it will continue with its original work.
 
-![img](Parallel programming with Swift. Basics.assets/1*dJj-050OlozTQN_YY8vn4A.png)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*dJj-050OlozTQN_YY8vn4A.png)
 
 ## Atomic
 
@@ -289,7 +289,7 @@ Since I’ve seen this question multiple times on the internet let’s answer it
 
 Since there is no mutex in Swift and synchronized has also been removed, it became the golden Standard for Swift developers to use DispatchQueues. When using it synchronously, you have the same behavior as a mutex, as all the actions are queued on the same queue. This prevents it from being executed simultaneously.
 
-![img](Parallel programming with Swift. Basics.assets/1*x23-uuBnwihMgePA6IOk8A.jpeg)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*x23-uuBnwihMgePA6IOk8A.jpeg)
 
 The disadvantage is it’s time consumption as it has to allocate and change contexts a lot. This is irrelevant if your app doesn’t need any high computational power, but in case you experience any frame drops, you might want to consider a different solution (e.g. Mutex).
 
