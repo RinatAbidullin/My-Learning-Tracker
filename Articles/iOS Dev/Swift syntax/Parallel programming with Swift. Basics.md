@@ -8,7 +8,7 @@ At the same time, it had some implications. As developers, we had to understand 
 
 So what is really the difference between Synchronous and Asynchronous Processing? Imagine we have a list of items. When processing these items synchronously, we start with the first item and finish it before we begin the next. It behaves the same way as a [FIFO Queue](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) (First In, First Out).
 
-![img](Parallel programming with Swift. Basics.assets/1*CQ86Ga7UXIpI6mNa_-dVow.jpeg)
+![img](Parallel%20programming%20with%20Swift.%20Basics.assets/1*CQ86Ga7UXIpI6mNa_-dVow.jpeg)
 
 Translated into code it means: every statement of a method will be executed in order.
 
