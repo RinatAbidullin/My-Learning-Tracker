@@ -102,4 +102,5 @@
 * [Apple Design Resources](https://developer.apple.com/design/resources/)
 * [iOS Resolution: All the pixels you need](https://ios-resolution.com/)
 * [Optimizing Your Product Page](https://developer.apple.com/app-store/product-page/)
+* [Program Roles](https://developer.apple.com/support/roles/)
 
