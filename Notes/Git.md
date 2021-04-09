@@ -255,4 +255,31 @@ git branch -D <branch> # Force-delete un-merged branches
 ```bash
 git diff origin/branchName branchName --color-words
 ```
+## Changing Your Git Author Identity
 
+### Changing Your Committer Name & Email Globally
+
+You can run the "git config" command with the --global flag; this will make sure all of your future commits use the given information:
+
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email "john@doe.org"
+```
+
+### Changing Your Committer Name & Email per Repository
+
+If you want to use special settings only when working in a certain repository, you can simply omit the --global flag. This makes the configuration valid only in that repository:
+
+```bash
+$ git config user.name "John Doe"
+$ git config user.email "john@doe.org"
+```
+
+## Editing the Author of Past Commits
+
+```bash
+git rebase -i HEAD~3
+# выбираем edit
+git commit --amend --author="John Doe <john@doe.org>"
+git rebase --continue
+```

@@ -29,6 +29,7 @@
 * [Шпаргалка по git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html)
 * [gitignore.io](https://www.gitignore.io/): Xcode, Swift, macOS, fastlane
 * [Collection of `.gitignore` templates](https://github.com/github/gitignore)
+* [The largest collection of useful `.gitignore` templates](https://github.com/toptal/gitignore)
 * [Шрифты](https://www.fonts-online.ru/)
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 * [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
@@ -61,6 +62,7 @@
 #### DB
 
 * [SQLite.swift](https://github.com/stephencelis/SQLite.swift)
+* [GRDB](https://github.com/groue/GRDB.swift)
 
 #### Reactive Events
 
