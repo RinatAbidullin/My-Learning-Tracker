@@ -93,6 +93,11 @@
 
 * [OpenSSL package for SPM](https://github.com/krzyzanowskim/OpenSSL)
 
+#### Extensions
+
+* [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift)
+* [HandySwift](https://github.com/Flinesoft/HandySwift)
+
 ## App Store
 
 * [Статистика по процентному соотношению версий iOS](https://developer.apple.com/support/app-store/)
