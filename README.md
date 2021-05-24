@@ -33,6 +33,8 @@
 * [SF Symbols 2](https://developer.apple.com/sf-symbols/)
 * [Convert JSON into gorgeous, typesafe code in any language](https://app.quicktype.io/)
 * [Json Editor Online](https://jsoneditoronline.org/)
+* [JSON String Escape / Unescape](https://www.freeformatter.com/json-escape.html)
+* [Base64-онлайн декодировщик](http://base64.ru/)
 * [Typora](https://typora.io/): Markdown Editor.
 * [HTML5 WebSocket test](https://www.websocket.org/echo.html): Echo Test
 * [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
@@ -88,6 +90,7 @@
 #### Utility
 
 * [R.swift](https://github.com/mac-cain13/R.swift): Add the `*.generated.swift` pattern to your .gitignore file to prevent unnecessary conflicts.
+* [Periphery](https://github.com/peripheryapp/periphery): A tool to identify unused code in Swift projects.
 
 #### Encryption
 
