@@ -493,11 +493,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3CQ4XEPS9C;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/IAPDemoProjectCourse/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rinatabidullin.IAPDemoProject;
 				PRODUCT_NAME = IAPDemoProject;
 				SWIFT_OBJC_BRIDGING_HEADER = "IAPDemoProjectCourse/Validation/IAPDemoProjectCourse-Bridging-Header.h";
@@ -514,11 +516,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3CQ4XEPS9C;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/IAPDemoProjectCourse/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rinatabidullin.IAPDemoProject;
 				PRODUCT_NAME = IAPDemoProject;
 				SWIFT_OBJC_BRIDGING_HEADER = "IAPDemoProjectCourse/Validation/IAPDemoProjectCourse-Bridging-Header.h";
