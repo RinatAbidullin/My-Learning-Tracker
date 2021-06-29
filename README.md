@@ -38,6 +38,7 @@
 * [Typora](https://typora.io/): Markdown Editor.
 * [HTML5 WebSocket test](https://www.websocket.org/echo.html): Echo Test
 * [Epoch & Unix Timestamp Conversion Tools](https://www.epochconverter.com/)
+* [JWT.IO allows you to decode, verify and generate JWT](https://jwt.io/)
 
 ## Библиотеки
 
